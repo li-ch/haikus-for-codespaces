@@ -3,6 +3,7 @@ let app = express();
 let ejs = require('ejs');
 const haikus = require('./haikus.json');
 const port = process.env.PORT || 3000;
+console.log(process.env.PORT) // process.env.PORT is undefined
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
